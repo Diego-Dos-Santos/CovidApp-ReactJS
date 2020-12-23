@@ -4,8 +4,9 @@ import api from '../../services/api';
 
 export default class Countries extends Component {
 
-    state = {
-        paises: []
+    constructor(props){
+      super(props)
+      this.state = { paises: [] }
    };
 
    componentDidMount(){
@@ -18,7 +19,7 @@ export default class Countries extends Component {
        this.setState({ paises: response.data.Countries })
    };
     render(){
-        const { paises } = this.state;
+        const paises = this.state.paises;
 
         return (
             <div className="countriesBlock">

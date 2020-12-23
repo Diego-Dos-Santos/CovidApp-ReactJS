@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
-import '../main/styles.css';
+import './styles.css';
 import { Link } from 'react-router-dom';
 import { TimelineLite } from 'gsap/all';
 
 export default class Main extends Component {
+
     constructor(props){
         super(props);
         this.myTween = new TimelineLite();
         this.myElement = [];
         this.myConfirmed = [];
         this.myDeaths = [];
+        this.state = { cases: [] }
     }
-
-    state = {
-         cases: [],
-    };
 
     componentDidMount(){
         this.loadGlobal();
@@ -54,6 +52,8 @@ export default class Main extends Component {
     };
 
     render(){
+        const cases = this.state.cases 
+
         return (
 
             <div className="containerBlock">
@@ -61,14 +61,14 @@ export default class Main extends Component {
                         <h1 ref={div => this.myElement = div}>Global</h1>
                         <div className="globalBlock__data">
                             <div className="globalBlock__info block1" ref={el => this.myConfirmed = el}>
-                                <p>Nuevos confirmados <strong ref={el => this.myNumbers = el}>{this.state.cases.NewConfirmed}</strong></p>                           
-                                <p className="infoMedio">Nuevas muertes <strong>{this.state.cases.NewDeaths}</strong></p>
-                                <p>Nuevos recuperados <strong>{this.state.cases.NewRecovered}</strong></p>
+                                <p>Nuevos confirmados <strong ref={el => this.myNumbers = el}>{cases.NewConfirmed}</strong></p>                           
+                                <p className="infoMedio">Nuevas muertes <strong>{cases.NewDeaths}</strong></p>
+                                <p>Nuevos recuperados <strong>{cases.NewRecovered}</strong></p>
                             </div>
                             <div className="globalBlock__info block2" ref={el => this.myDeaths = el}>
-                                <p>Muertes total <strong>{this.state.cases.TotalDeaths}</strong></p>
-                                <p className="infoMedio">Total confirmados <strong>{this.state.cases.TotalConfirmed}</strong></p> 
-                                <p>Recuperados total <strong>{this.state.cases.TotalRecovered}</strong></p>
+                                <p>Muertes total <strong>{cases.TotalDeaths}</strong></p>
+                                <p className="infoMedio">Total confirmados <strong>{cases.TotalConfirmed}</strong></p> 
+                                <p>Recuperados total <strong>{cases.TotalRecovered}</strong></p>
                             </div>
                         </div>
             </div>

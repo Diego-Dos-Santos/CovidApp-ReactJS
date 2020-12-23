@@ -1,12 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'; 
-import Main from './pages/main';
-import Countries from './pages/countries';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'; 
+import Main from './containers/main';
+import Countries from './containers/countries';
+import Login from './containers/login';
 
 const Routes = () => (
     <BrowserRouter>
-        <Route exact path="/" component={Main}/>
-        <Route path="/paises" component={Countries} />
+        <Switch>
+            <Route exact path="/" component={Main}/>
+            <Route path="/paises" component={Countries} />
+            <Route path="/login" component={Login} />
+        </Switch>
     </BrowserRouter>
 );
 

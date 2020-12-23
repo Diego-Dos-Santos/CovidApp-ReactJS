@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './styles.css';
+//import { Link } from 'react-router-dom';
 import { TimelineLite } from 'gsap/all';
+
 
 export default class Main extends Component {
     constructor(props){
@@ -21,7 +23,10 @@ export default class Main extends Component {
     }
     render(){
         return (
-            <header id="main-header" ref={div => this.myElements = div}><span>COVID Countries</span></header>
+            <header id="main-header" ref={div => this.myElements = div}>
+                <span>COVID Countries</span>
+                <a href="/login">TEST</a>
+            </header>
         )
     }
 }
