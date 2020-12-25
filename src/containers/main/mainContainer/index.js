@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import api from '../../services/api';
+import api from '../../../services/api';
 import './styles.css';
-import { Link } from 'react-router-dom';
+import CountriesList from '../countriesContainer';
 import { TimelineLite } from 'gsap/all';
 
 export default class Main extends Component {
@@ -73,11 +73,7 @@ export default class Main extends Component {
                         </div>
             </div>
 
-                <div className="countriesBlock__global">
-                    <h1>Números por Países</h1>
-
-                    <Link to="/paises">Lista de países</Link>
-                </div>
+              <CountriesList />
             </div>
         )
     }

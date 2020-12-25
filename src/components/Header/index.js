@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './styles.css';
-//import { Link } from 'react-router-dom';
 import { TimelineLite } from 'gsap/all';
 
 

@@ -1,0 +1,18 @@
+.countriesBlock__global a {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 30px 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 230px;
+    background: #9e6fb9;
+}
+
+.countriesBlock__global a:hover {
+    opacity: 0.7;
+}

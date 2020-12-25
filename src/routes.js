@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'; 
-import Main from './containers/main';
+import Main from './containers/main/mainContainer';
 import Countries from './containers/countries';
 import Login from './containers/login';
 
