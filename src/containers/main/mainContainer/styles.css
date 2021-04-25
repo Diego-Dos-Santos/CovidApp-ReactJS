@@ -1,43 +1,43 @@
 .generalBlock {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #757575;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #757575;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 44px;
 }
 
 .globalBlock__info {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 0 50px;
-    padding: 50px 0;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 50px;
+  padding: 50px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .globalBlock__info p {
-    letter-spacing: 3px;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #757575;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #757575;
 }
 
 .globalBlock__info strong {
-    font-size: 32px;
-    padding: 10px;
-    border: 1px solid #9e6fb9;
-    border-radius: 5px;
-    color: #9e6fb9;
+  font-size: 32px;
+  padding: 10px;
+  border: 1px solid #9e6fb9;
+  border-radius: 5px;
+  color: #9e6fb9;
 }
 
 .infoMedio {
-    margin: 0 15px;
+  margin: 0 15px;
 }

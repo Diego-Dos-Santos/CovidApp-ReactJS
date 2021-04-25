@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://DiegoDSC:DSdSC1990@cluster0.oblid.mongodb.net/COVIDApp?retryWrites=true&w=majority"
+}

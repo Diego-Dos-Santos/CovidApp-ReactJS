@@ -1,42 +1,39 @@
 .countriesBlock {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.5em;
 }
 
 .countryBlock {
-    padding: 10px 30px 30px;
-    margin: 14px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+  padding: 10px 30px 30px;
+  margin: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 .countryBlock h1 {
-    margin: 20px;
-    text-align: center;
-    color: #9e6fb9;
+  margin: 20px;
+  text-align: center;
+  color: #9e6fb9;
 }
 
 .countryBlock h2 {
-    color: #9e6fb9;
-    text-align: center;
-    margin: 20px 0;
+  color: #9e6fb9;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .countryBlock p {
-    text-align: center;
-    margin: 5px 0;
+  text-align: center;
+  margin: 5px 0;
 }
 
 .globalBlock__details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .globalBlock__details strong {
-    color: #9e6fb9;
+  color: #9e6fb9;
 }
-
-
-
